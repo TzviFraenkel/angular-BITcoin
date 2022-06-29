@@ -1,0 +1,21 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: bisque;
+    padding: 10px;
+    margin-bottom: 50px;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        &:hover {
+            cursor: pointer;
+            text-decoration:underline;
+        }
+    }
+    nav > *:not(:last-child) {
+        margin-right: 10px;
+    }
+}

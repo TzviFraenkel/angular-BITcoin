@@ -1,0 +1,10 @@
+<img src="https://robohash.org/{{contact._id}}" alt="profile-picture">
+<h2>{{contact.name}}</h2>
+<p>{{contact.email}}</p>
+<p>{{contact.phone}}</p>
+
+<section class="controls">
+    <button routerLink="/contact">Back</button>
+    <button (click)="onDeleteContact()">Delete Contact</button>
+    <button [routerLink]="['/edit', contact._id]">Edit</button>
+</section>

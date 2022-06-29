@@ -1,0 +1,7 @@
+<app-contact-filter></app-contact-filter>
+<ul class="contact-list">
+    <li *ngFor="let contact of contacts">
+        <app-contact-preview [contact]="contact"></app-contact-preview>
+    </li>
+</ul>
+<button routerLink="/edit">+</button>

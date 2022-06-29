@@ -1,0 +1,15 @@
+<form (ngSubmit)="onSubmit()" #form="ngForm">
+    <label for="name">Name</label>
+    <input [(ngModel)]="contact.name" type="text" name="name" placeholder="name" required>
+    
+    <label for="email">Email</label>
+    <input [(ngModel)]="contact.email" type="text" name="email" placeholder="email" required>
+    
+    <label for="phone">phone</label>
+    <input [(ngModel)]="contact.phone" type="text" name="phone" placeholder="phone" required>
+    <button>Submit</button>
+</form>
+
+<button [routerLink]="['/contact', contact._id]">Back</button>
+<button (click)="onDeleteContact()">Delete Contact</button>
+
