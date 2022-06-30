@@ -1,5 +1,6 @@
-<p>Name: {{user.name}}</p>
-<p>Coins: {{user.coins}}</p>
+<img *ngIf="user.name" src="https://robohash.org/{{user.name}}" alt="user-image">
+<p>Name: {{user.name || 'Guset'}}</p>
+<p *ngIf="user.name">Coins: {{user.coins}}</p>
 <p>USD to Bitcoin: {{rate}}</p>
 
-<router-outlet></router-outlet>
+<app-move-list [maxToDisplay]="3"></app-move-list>

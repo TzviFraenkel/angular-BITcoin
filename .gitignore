@@ -11,6 +11,9 @@
 npm-debug.log
 yarn-error.log
 
+#app models.
+/src/app/models.
+
 # IDEs and editors
 .idea/
 .project

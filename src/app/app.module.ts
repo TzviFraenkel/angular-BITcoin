@@ -15,6 +15,9 @@ import { ContactListComponent } from './components/contact-list/contact-list.com
 import { ContactPreviewComponent } from './components/contact-preview/contact-preview.component';
 import { InputComponent } from './components/input/input.component';
 import { HeaderComponent } from './components/header/header.component';
+import { SignupPageComponent } from './pages/signup-page/signup-page.component';
+import { TransferFundComponent } from './components/transfer-fund/transfer-fund.component';
+import { MoveListComponent } from './components/move-list/move-list.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { HeaderComponent } from './components/header/header.component';
     ContactListComponent,
     ContactPreviewComponent,
     InputComponent,
-    HeaderComponent
+    HeaderComponent,
+    SignupPageComponent,
+    TransferFundComponent,
+    MoveListComponent
   ],
   imports: [
     BrowserModule,

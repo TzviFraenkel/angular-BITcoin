@@ -1,0 +1,8 @@
+<h3 *ngIf="contactMoveId && movesToDisplay[0]">Last transfers to {{movesToDisplay[0].to}}</h3>
+<h3 *ngIf="user.name && !contactMoveId">Last 3 transforms</h3>
+
+<section *ngFor="let move of movesToDisplay">
+    <p *ngIf="!contactMoveId">To: {{move.to}}</p>
+    <p>At: {{move.at | date :'short'}}</p>
+    <p>Amount: {{move.amount}}</p>
+</section>

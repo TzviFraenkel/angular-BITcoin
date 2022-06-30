@@ -8,3 +8,5 @@
     <button (click)="onDeleteContact()">Delete Contact</button>
     <button [routerLink]="['/edit', contact._id]">Edit</button>
 </section>
+<app-transfer-fund *ngIf="isLoggedIn" [contactToTransform]="contact"></app-transfer-fund>
+<app-move-list [contactMoveId]="contact._id"></app-move-list>

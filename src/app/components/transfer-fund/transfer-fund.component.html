@@ -1,0 +1,8 @@
+
+<p>Transfer coins to {{contactToTransform.name}}:</p>
+<p class="error-msg">{{errorMsg}}</p>
+<form (ngSubmit)="onTransformCoins()">
+    <label for="amount">Amount:</label>
+    <input [(ngModel)]="amount" type="number" name="amount" placeholder="Number of coins">
+    <button>Transfer</button>
+</form>
